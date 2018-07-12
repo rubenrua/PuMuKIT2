@@ -236,7 +236,7 @@
             <argument type="service" id="security.authorization_checker" />
             <argument type="service" id="templating" />
             <argument type="service" id="router" />
-            <argument>%pumukit_new_admin.disable_broadcast_creation%</argument>
+            <argument>false</argument>
         </service>
 
         <service id="pumukitschema.special_translation" class="Pumukit\SchemaBundle\Services\SpecialTranslationService">
@@ -246,7 +246,7 @@
         <service id="pumukitschema.eventsession" class="Pumukit\SchemaBundle\Services\EmbeddedEventSessionService">
           <argument type="service" id="doctrine_mongodb.odm.document_manager"/>
           <argument>%pumukitschema.event_default_poster%</argument>
-          <argument>%pumukit_new_admin.advance_live_event_create_default_pic%</argument>
+          <argument>false</argument>
         </service>
 
     </services>

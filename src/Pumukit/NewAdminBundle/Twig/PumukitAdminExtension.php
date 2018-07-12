@@ -60,7 +60,7 @@ class PumukitAdminExtension extends \Twig_Extension
             new \Twig_SimpleFilter('profile', array($this, 'getProfile')),
             new \Twig_SimpleFilter('display', array($this, 'getDisplay')),
             new \Twig_SimpleFilter('duration_string', array($this, 'getDurationString')),
-            new \Twig_SimpleFilter('language_name', array($this, 'getLanguageName')),
+            new \Twig_SimpleFilter('language_name', array($this, 'getLanguageName')), //TODO move to schema/core bundle
             new \Twig_SimpleFilter('status_icon', array($this, 'getStatusIcon')),
             new \Twig_SimpleFilter('status_text', array($this, 'getStatusText')),
             new \Twig_SimpleFilter('series_icon', array($this, 'getSeriesIcon')),

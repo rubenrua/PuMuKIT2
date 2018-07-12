@@ -46,9 +46,9 @@ pumukit_encoder:
     type:     annotation
     prefix:   /
 
-pumukitnewadmin:
-    resource: @PumukitNewAdminBundle/Resources/config/routing.yml
-    prefix:   /
+#pumukitnewadmin:
+#    resource: @PumukitNewAdminBundle/Resources/config/routing.yml
+#    prefix:   /
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
