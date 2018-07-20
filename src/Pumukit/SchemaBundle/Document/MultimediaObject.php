@@ -69,7 +69,7 @@ class MultimediaObject
     private $secret;
 
     /**
-     * @MongoDB\ReferenceOne(targetDocument="Series", inversedBy="multimedia_objects", simple=true)
+     * @MongoDB\ReferenceOne(targetDocument="Series", inversedBy="multimedia_objects", simple=true, cascade="ALL")
      * @Gedmo\SortableGroup
      * @MongoDB\Index
      */
